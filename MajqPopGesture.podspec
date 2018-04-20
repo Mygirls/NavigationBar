@@ -1,4 +1,5 @@
-#
+# => https://www.jianshu.com/p/10074e5f9b53?utm_campaign=maleskine&utm_content=note&utm_medium=seo_notes&utm_source=recommendation
+# pod trunk register 18676729356@163.com 'majq' --description='imac' --verbose
 #  Be sure to run `pod spec lint MajqPopGesture.podspec' to ensure this is a
 #  valid spec and to remove all comments including this before submitting the spec.
 #
@@ -51,7 +52,7 @@ Pod::Spec.new do |s|
   #  profile URL.
   #
 
-  s.author             = { "Mygirls" => "1208535097@qq.com" }
+  s.author             = { "majq" => "18676729356@163.com" }
   # Or just: s.author    = "apple"
   # s.authors            = { "apple" => "2530469200@qq.com" }
   # s.social_media_url   = "http://twitter.com/apple"
@@ -90,7 +91,10 @@ Pod::Spec.new do |s|
   #
 
   # “*” 表示匹配所有文件、“*.{h,m}” 表示匹配所有以.h和.m结尾的文件 、“**” 表示匹配所有子目录
-  s.source_files = "MajqPopGesture/MajqNagigation/*.{h,m}"
+  # s.source_files = "MajqNagigation/*.{h,m}"
+
+  s.source_files  = "MajqPopGesture", "/MajqPopGesture/MajqNagigation/**/*.{h,m}"
+
   # s.source_files  = "Classes", "Classes/**/*.{h,m}"
   # s.exclude_files = "Classes/Exclude"
 
